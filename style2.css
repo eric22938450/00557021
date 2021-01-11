@@ -1,0 +1,152 @@
+html {
+	background: #f8f8f8;
+	margin:0 0 0 -1px;
+	padding:0;	
+	overflow-Y:scroll;  /*顯示y捲軸*/
+}  
+
+body {   /*postion*/
+	padding:0;
+	margin :0;
+	/*display:table;*/  
+	width:100%;
+	background: url(back.jpg) repeat center top;
+}
+body img     {
+	position: absolute;
+
+         }
+p {
+	letter-spacing: normal; /*字寬*/
+	line-height: 1.7em; /*行高*/
+}
+#B ul li {
+        /*一個目錄*/
+			display:block; /*分段顯示*/
+			float:left;
+			margin:0;
+			padding:0;
+      background: url("hmenu.jpg") repeat-x top left;
+
+
+      }
+#B ul li a {
+				display:block;
+				float:left;
+				color:#eeeeee; /*灰色*/
+				text-decoration:none;
+				padding:0px 71px ;
+				line-height:30px;
+				font-weight:bold;
+				letter-spacing:4px;
+			}
+#B ul {
+		display:table;
+		margin:0 auto;
+		padding:0;
+		list-style-type:none; /*不用設項目符號*/
+		position:relative; 
+		top:313px;
+		height:30px;
+		text-transform:uppercase; /*大寫*/
+		font-size:15px;
+		left:26.5px;
+		width:1200px;
+		font-family: Verdana,Arial,sans-serif;
+	}
+#B { /*目錄*/
+	height:30px;
+	margin:0 auto ;
+	text-align:center;
+}
+#shadow  /*陰影*/
+{	
+	background: url(blank.png) repeat center top;
+	margin:0 auto ;  /*top=0 其他為自動*/
+	width:64%;
+	box-shadow:3px 3px 12px black;	
+}
+#back{	
+	background: url("spurs2.jpg") no-repeat center top;	
+}
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+#content {
+	width:860px;
+	margin:0 auto;
+	min-height:1400px;
+}
+#center {
+	width:860px;
+	padding:0px 0px 0px 0px;
+	float:left;
+	position:relative; 
+	top:313px;
+	margin:0 auto;
+}
+.player img{
+	box-shadow:3px 3px 12px black;
+	padding:8px;
+	overflow:hidden;
+	position: relative;
+	width:30%;
+	float:left;
+	height:300px;
+}
+
+
+.btn {
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	font-family: Arial;
+	font-weight:bold;
+	float:left;
+	/*font-size: 20px;*/
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	width: 42px;
+	height: 30px;
+	position: relative;
+	transition: background-color 0.4s;
+	overflow:hidden;
+  }
+  
+  .bottom:hover {
+	color:dodgerblue;
+  }
+
+  .content1 {
+	position: absolute;
+	/*width: 100px;*/
+	font-weight:bold;
+	height: 15px;
+	left: 26px;
+	text-align: center;
+	line-height: 30px;
+	/*最後才加上的動畫效果*/
+	transition: top 0.3s;
+  }
+
+  .top {
+	top: 0px;
+  }
+  
+  .btn:hover .top {
+	top: -50px;
+  }
+  
+  .bottom {
+	top: 50px;
+  }
+  
+  .btn:hover .bottom {
+	top: 0px;
+  }

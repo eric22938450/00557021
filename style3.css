@@ -1,0 +1,595 @@
+#box{
+    width:500px; height:300px;
+    position: relative;
+    background: url("white.png") no-repeat center top;
+  }
+
+  #box1{
+    width:500px; height:300px;
+    position: relative;
+    background: url("white.png") no-repeat center top;
+  }
+  
+  .img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    left: 210px;
+    top: 270px;
+    border-radius:999em;
+    animation-name: rightMove1, bottomMove1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img2 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    left: 460px;
+    top: 40px;
+    border-radius:999em;
+    animation-name: rightMove2, bottomMove2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img3 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    left: 8px;
+    top: 40px;
+    border-radius:999em;
+    animation-name: rightMove3, bottomMove3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img4 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    left: 130px;
+    top: 65px;
+    border-radius:999em;
+    animation-name: rightMove4, bottomMove4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img5 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    /*background-color: blue;*/
+    left: 330px;
+    top: 45px;
+    border-radius:999em;
+    animation-name: rightMove5, bottomMove5;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img6 {
+    width: 25px;
+    height: 25px;
+    border: 1px solid red;
+    position: absolute;
+    background-color: red;
+    left: 220px;
+    top: 250px;
+    -webkit-clip-path:circle(50% at 50% 50%);
+    animation-name: rightMove6, bottomMove6;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img11 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    left: 210px;
+    top: 270px;
+    border-radius:999em;
+    animation-name: rightMove11, bottomMove11;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img12 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    left: 460px;
+    top: 40px;
+    border-radius:999em;
+    animation-name: rightMove12, bottomMove12;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img13 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    left: 9px;
+    top: 95px;
+    border-radius:999em;
+    animation-name: rightMove13, bottomMove13;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img14 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    left: 141px;
+    top: 65px;
+    border-radius:999em;
+    animation-name: rightMove14, bottomMove14;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img15 {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    /*background-color: blue;*/
+    left: 240px;
+    top: 120px;
+    border-radius:999em;
+    animation-name: rightMove15, bottomMove15;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  .img16 {
+    width: 25px;
+    height: 25px;
+    border: 1px solid red;
+    position: absolute;
+    background-color: red;
+    left: 220px;
+    top: 250px;
+    -webkit-clip-path:circle(50% at 50% 50%);
+    animation-name: rightMove16, bottomMove16;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+  
+  @keyframes rightMove1{
+    20% {
+        animation-timing-function: linear;
+        left: 210px;
+      }
+    35% {
+        animation-timing-function: linear;
+        left: 460px;
+      }
+      100% {
+        animation-timing-function: linear;
+        left: 460px;
+      }
+  }
+
+  @keyframes bottomMove1{
+    20% {
+        animation-timing-function: linear;
+        top: 270px;
+      }
+    35% {
+        animation-timing-function: linear;
+        top: 40px;
+      }
+      100% {
+        animation-timing-function: linear;
+        top: 40px;
+      }
+  }
+
+  @keyframes rightMove2{
+    20% {
+        animation-timing-function: linear;
+        left: 460px;
+      }
+    30% {
+        animation-timing-function: linear;
+        left: 448px;
+      }
+      100% {
+        animation-timing-function: linear;
+        left: 448px;
+      }
+  }
+
+  @keyframes bottomMove2{
+    20% {
+        animation-timing-function: linear;
+        top: 40px;
+      }
+    30% {
+        animation-timing-function: linear;
+        top: 165px;
+      }
+      100% {
+        animation-timing-function: linear;
+        top: 165px;
+      }
+  }
+
+  @keyframes rightMove3{
+    40% {
+        animation-timing-function: linear;
+        left: 8px;
+      }
+    50% {
+        animation-timing-function: linear;
+        left: 210px;
+      }
+      100% {
+        animation-timing-function: linear;
+        left: 210px;
+      }
+  }
+
+  @keyframes bottomMove3{
+    40% {
+        animation-timing-function: linear;
+        top: 40px;
+      }
+    50% {
+        animation-timing-function: linear;
+        top: 40px;
+      }
+      100% {
+        animation-timing-function: linear;
+        top: 45px;
+      }
+  }
+
+  @keyframes rightMove4{
+    35% {
+        animation-timing-function: linear;
+        left: 130px;
+      }
+    40% {
+        animation-timing-function: linear;
+        left: 110px;
+      }
+      100% {
+        animation-timing-function: linear;
+        left: 110px;
+      }
+  }
+
+  @keyframes bottomMove4{
+    35% {
+        animation-timing-function: linear;
+        top: 65px;
+      }
+    40% {
+        animation-timing-function: linear;
+        top: 45px;
+      }
+      100% {
+        animation-timing-function: linear;
+        top: 45px;
+      }
+  }
+
+
+  @keyframes rightMove5{
+    10% {
+        animation-timing-function: linear;
+        left: 308px;
+      }
+    100% {
+        animation-timing-function: linear;
+        left: 308px;
+      }
+  }
+
+  @keyframes bottomMove5{
+    10% {
+        animation-timing-function: linear;
+        top: 170px;
+      }
+    100% {
+        animation-timing-function: linear;
+        top: 170px;
+      }
+  }
+
+  @keyframes rightMove6{
+    10% {
+        animation-timing-function: linear;
+        left: 220px;
+      }
+      20% {
+        animation-timing-function: linear;
+        left: 300px;
+      }
+      50% {
+        animation-timing-function: linear;
+        left: 300px;
+      }
+      60% {
+        animation-timing-function: linear;
+        left: 225px;
+      }
+    100% {
+        animation-timing-function: linear;
+        left: 225px;
+      }
+  }
+
+  @keyframes bottomMove6{
+    10% {
+        animation-timing-function: linear;
+        top: 250px;
+      }
+      20% {
+        animation-timing-function: linear;
+        top: 200px;
+      }
+      50% {
+        animation-timing-function: linear;
+        top: 200px;
+      }
+      60% {
+        animation-timing-function: linear;
+        top: 65px;
+      }
+    100% {
+        animation-timing-function: linear;
+        top: 65px;
+      }
+  }
+
+  @keyframes rightMove11{
+    25% {
+        animation-timing-function: linear;
+        left: 210px;
+      }
+    40% {
+        animation-timing-function: linear;
+        left: 9px;
+      }
+      100% {
+        animation-timing-function: linear;
+        left: 9px;
+      }
+  }
+
+  @keyframes bottomMove11{
+    25% {
+        animation-timing-function: linear;
+        top: 270px;
+      }
+    40% {
+        animation-timing-function: linear;
+        top: 90px;
+      }
+      100% {
+        animation-timing-function: linear;
+        top: 90px;
+      }
+  }
+
+  @keyframes rightMove12{
+    20% {
+        animation-timing-function: linear;
+        left: 460px;
+      }
+    35% {
+        animation-timing-function: linear;
+        left: 460px;
+      }
+      55% {
+        animation-timing-function: linear;
+        left: 69px;
+      }
+      100% {
+        animation-timing-function: linear;
+        left: 69px;
+      }
+  }
+
+  @keyframes bottomMove12{
+    20% {
+        animation-timing-function: linear;
+        top: 40px;
+      }
+    35% {
+        animation-timing-function: linear;
+        top: 40px;
+      }
+      100% {
+        animation-timing-function: linear;
+        top: 40px;
+      }
+  }
+
+  @keyframes rightMove13{
+    25% {
+        animation-timing-function: linear;
+        left: 9px;
+      }
+    40% {
+        animation-timing-function: linear;
+        left: 96px;
+      }
+      100% {
+        animation-timing-function: linear;
+        left: 96px;
+      }
+  }
+
+  @keyframes bottomMove13{
+    25% {
+        animation-timing-function: linear;
+        top: 95px;
+      }
+    40% {
+        animation-timing-function: linear;
+        top: 235px;
+      }
+      100% {
+        animation-timing-function: linear;
+        top: 235px;
+      }
+  }
+
+  @keyframes rightMove14{
+    5% {
+        animation-timing-function: linear;
+        left: 141px;
+      }
+    20% {
+        animation-timing-function: linear;
+        left: 325px;
+      }
+      100% {
+        animation-timing-function: linear;
+        left: 325px;
+      }
+  }
+
+  @keyframes bottomMove14{
+    5% {
+        animation-timing-function: linear;
+        top: 65px;
+      }
+    20% {
+        animation-timing-function: linear;
+        top: 235px;
+      }
+      100% {
+        animation-timing-function: linear;
+        top: 235px;
+      }
+  }
+
+
+  @keyframes rightMove15{
+    5% {
+        animation-timing-function: linear;
+        left: 210px;
+      }
+      25% {
+        animation-timing-function: linear;
+        left: 210px;
+      }
+      35% {
+        animation-timing-function: linear;
+        left: 320px;
+      }
+
+    
+    100% {
+        animation-timing-function: linear;
+        left: 320px;
+      }
+  }
+
+  @keyframes bottomMove15{
+    5% {
+        animation-timing-function: linear;
+        top: 100px;
+      }
+      25% {
+        animation-timing-function: linear;
+        top: 100px;
+      }
+      35% {
+        animation-timing-function: linear;
+        top: 80px;
+      }
+    100% {
+        animation-timing-function: linear;
+        top: 80px;
+      }
+  }
+
+  @keyframes rightMove16{
+    20% {
+        animation-timing-function: linear;
+        left: 220px;
+      }
+      25% {
+        animation-timing-function: linear;
+        left: 300px;
+      }
+      55% {
+        animation-timing-function: linear;
+        left: 300px;
+      }
+      65% {
+        animation-timing-function: linear;
+        left: 310px;
+      }
+    100% {
+        animation-timing-function: linear;
+        left: 310px;
+      }
+  }
+
+  @keyframes bottomMove16{
+    20% {
+        animation-timing-function: linear;
+        top: 250px;
+      }
+      25% {
+        animation-timing-function: linear;
+        top: 235px;
+      }
+      55% {
+        animation-timing-function: linear;
+        top: 235px;
+      }
+      65% {
+        animation-timing-function: linear;
+        top: 105px;
+      }
+    100% {
+        animation-timing-function: linear;
+        top: 105px;
+      }
+  }
+
+

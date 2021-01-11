@@ -1,0 +1,213 @@
+
+<?xml version="1.0" encoding ="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  
+<html xmlns ="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Keelung Easy Go</title>
+    <link type="text/css" rel="Stylesheet" href="style.css" />
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><!--oad gooele map API-->
+    <script type="text/javascript" src="http://code.google.com/apis/gears/gears_init.js"></script> <!--load google gear-->
+    <script type="text/javascript">
+    <!--
+    var directionDisplay;
+    var directionsService = new google.maps.DirectionsService();
+    var map;
+    var initialPlace;
+    var infowindow = new google.maps.InfoWindow();
+    var browserSupportFlag =  new Boolean();
+    var urPosition;
+    var taipei;
+    
+    function initialize() {
+      
+     directionsDisplay = new google.maps.DirectionsRenderer();
+     geocoder = new google.maps.Geocoder();
+     initialPlace = new google.maps.LatLng(25.132239, 121.73928899999999);
+      
+      var myOptions = {
+        zoom:16,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        center: initialPlace
+        }
+      map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+      
+      var marker = new google.maps.Marker({
+            map: map, 
+            position: initialPlace
+        });
+      infowindow.setContent("基隆");
+      infowindow.open(map, marker);
+      directionsDisplay.setMap(map);
+      directionsDisplay.setPanel(document.getElementById("directionsPanel"));
+     
+    }
+    
+    function getAddress(){
+        if(document.getElementById("agree").value=="no")     document.getElementById("address_lb").style.visibility="visible";
+        if(document.getElementById("agree").value=="yes")      document.getElementById("address_lb").style.visibility="hidden";
+        }
+    
+    function getUrposition(){
+       taipei = new google.maps.LatLng(25.091075,121.55983449999997);
+        // Try W3C Geolocation (Preferred)
+	  if(navigator.geolocation) {
+		browserSupportFlag = true;
+		navigator.geolocation.getCurrentPosition(function(position) {
+		  urPosition = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+		  //map.setCenter(initialLocation);
+		}, function() {
+		  handleNoGeolocation(browserSupportFlag);
+		});
+	  // Try Google Gears Geolocation
+	   } else if (google.gears) {
+		browserSupportFlag = true;
+		var geo = google.gears.factory.create('beta.geolocation');
+		geo.getCurrentPosition(function(position) {
+		 urPosition = new google.maps.LatLng(position.latitude,position.longitude);
+		 // map.setCenter(initialLocation);
+		}, function() {
+		  handleNoGeoLocation(browserSupportFlag);
+		});
+	  // Browser doesn't support Geolocation
+	    } else {
+		browserSupportFlag = false;
+		handleNoGeolocation(browserSupportFlag);
+	  } 
+	}
+	 
+	function handleNoGeolocation(errorFlag) {
+		if (errorFlag == true) {
+		  alert("Geolocation service failed.");
+		  //initialLocation = newyork;
+		} else {
+		  alert("Your browser doesn't support geolocation. We've placed you in Taipei.");
+		  urPosition = taipei;
+		}
+		//map.setCenter(initialLocation);
+	 }
+	  
+    function calcRoute() {
+      var selectedMode = document.getElementById("mode").value; //交通方式
+      var selectedAgree = document.getElementById("agree").value;
+      var request;
+      var start;
+      var end ="基隆";  //基隆 
+      if(selectedAgree =="yes"){
+            getUrposition();
+             request = {
+                origin: urPosition, 
+                destination: initialPlace,
+                travelMode: google.maps.DirectionsTravelMode.DRIVING
+                };
+              }  
+        else if(selectedAgree == "no"){
+            start=document.getElementById("address").value; 
+            request = {
+                origin: start, 
+                destination: end,
+                travelMode: google.maps.DirectionsTravelMode[selectedMode]
+              };
+             }
+      directionsService.route(request, function(response, status) {
+        if (status == google.maps.DirectionsStatus.OK) {
+          directionsDisplay.setDirections(response);
+        }
+      });
+    }
+   
+  
+    -->
+    
+    </script>
+  
+  </head>
+      <body onload="initialize()">
+    <div id="wrapper"> 
+      <div id="bg"> 
+        <div id="header"></div>  
+        <div id="title"> 
+          <div id="container"> 
+            <!-- start banner -->  
+            <div id="banner"></div>  
+            <!-- end banner -->  
+            <!-- 目錄 -->  
+            <div id="nav1"> 
+              <ul>
+                <li id="current" style="border:none">
+                  <a href="#" shape="rect">Home</a>
+                </li>
+                <li>
+                  <a href="food1.html" shape="rect">美食</a>
+                </li>
+                <li>
+                  <a href="play1.html" shape="rect">玩樂</a>
+                </li>
+                <li>
+                  <a href="monument1.html" shape="rect">古蹟</a>
+                </li>
+                <li>
+                  <a href="administration1.html" shape="rect">行政機關</a
+                </li>
+              </ul> 
+            </div>  
+            <!-- 目錄(end)  -->  
+            <!--  content -->  
+            <div id="content"> 
+                 <div id="right" style="height:538px" >
+                        <iframe src="http://www.facebook.com/plugins/like.php?href=ind.ntou.edu.tw/~b98570016"
+                        scrolling="no" frameborder="0"style="border:none; width:150px; "id="I1" name="I1"></iframe>
+                 </div>
+          
+              <div id="center"> 
+                  <h1>雞籠</h1>  
+                  <p>基隆原名雞籠，一由於基隆山形似雞籠，一認為起源於此地之平埔族，自稱Ketaganan(凱達格蘭)之刪去taga，譯Kenan之音為雞籠。清雍正元年(1723)，漳州人從八里坌、金包裏(金山)萬里瑪鋉，移至雞籠，在牛稠港虎子山築魚寮，發展至仁愛區海濱，建街肆，稱崁仔頂街，是市街創建之嚆矢。光緒元年(1875)設臺北府分府通判于雞籠，並取“基地昌隆”之意，而改稱基隆。（來源：臺灣文獻叢刊）</p>  
+                  <div> 
+                    <img src="images/keelung_map.gif" style="height: 239px; width: 313px"/>
+                    <span>來源:<a href=http://www.ez-going.com.tw/info_taiwan/info/travel/03-01.asp">台灣旅遊在線</a></span> 
+                  </div>
+                  <h2>如何到基隆呢?</h2>
+                  <p style="margin-bottom:1px">(自動偵測位置需要點擊兩下GO,此功能並不完全精確,IE不支援)</p>  
+                  是否同意本站取得你目前的位置
+                 <select id="agree" onchange="getAddress();">
+                      <option value="no">我想要自己輸入出發地</option>
+                      <option value="yes">同意本站取得我目前的位置</option>
+                   </select>
+                  交通方式
+                 <select id="mode">
+                      <option value="DRIVING">開車</option>
+                      <option value="WALKING">步行</option>
+                   </select>
+                  <input type="button" value="Go!" id="go" onclick="calcRoute();"/><br />
+                  
+                  <label id="address_lb">出發地
+                     <input id="address" type="text" size="30" id="address"  />
+                  </label>
+                    
+                  <div id="map_canvas" ></div>               
+                  <p style="clear:both" /> 
+              </div> 
+              <!-- end center-->
+              
+                 <div id="right" style=" height:300px; ">
+                     <div id="directionsPanel" style="width:200; height:300px;  overflow-Y:auto"></div>
+                </div>              
+                <div class="clear" style="height:40px"></div> 
+            
+            </div> 
+            <!-- end content --> 
+            
+          </div>  
+          <!-- end container --> 
+      
+            <div id="footerWrapper"> 
+                <div id="footer"> 
+                  <a href="B98570016.pptx" shape="rect">說明文件</a>
+              </div> 
+            </div> <!-- end footer Wrapper -->
+        </div> <!-- end title -->
+      </div> <!-- end bg -->
+    </div>  <!-- end wrapper -->
+  </body>
+</html>
