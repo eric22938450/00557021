@@ -3,29 +3,34 @@
 <!-- Fig. 2.4: contact.html -->
 <!-- Linking to an e-mail address. -->
 <html>
-   <head>
+   <head>     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta charset = "utf-8">
       <title>馬刺-開場</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
       <style type = "text/css">
+      @media screen {
         body{
-             margin: 0;
-             padding: 0;
              background-color: black;
             }
-        img{
-             display: block;
-             margin: 0 auto;
-             animation: fadeIn;
-             animation-duration: 5s;
-             width: 80%;
-            height: 40%;
+        div{
+            margin: 0 auto;
+            animation: fadeIn;
+            animation-duration: 5s;
             animation-timing-function:ease-in;
-            }
+            width: 100vw;
+            height: 100vh;
+            background-image:url("GDP.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: left top;
+            background-size: cover;
+        }
         div a {
-            position:absolute;
-            top:650px;
-            left: 740px;
+            position: fixed;
+            top: 90%;
+            left:48%;
+            margin: auto;
             font-size: 50px;
             animation: fadeInLeftBig;
             animation-duration: 2s;
@@ -36,9 +41,10 @@
             font-family: fantasy;
         }
         .Description {
-            position:absolute;
-            top:50px;
-            left: 1000px;
+            position: fixed;
+            top: 10%;
+            left:75%;
+            margin: auto;
             font-size: 25px;
             border-width: 3px ; width: 150px; height: 30px ; padding: 5px; text-align: center; background-color: rgb(41, 105, 176, 0.7);border-radius: 4px;
         }
@@ -46,12 +52,14 @@
         color:white;
         text-decoration:none;
         }
+          
+      }
+        
             
       </style>
    </head>
    <body>
     <div id ="GDP">
-        <img src="GDP.jpg">
         <a href="FINAL.html" shape="rect">Start</a>
         <a href="spurs.pptx" class ="Description" shape="rect">說明文件</a>
     </div>

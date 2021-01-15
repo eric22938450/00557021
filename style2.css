@@ -5,23 +5,20 @@ html {
 	overflow-Y:scroll;  /*顯示y捲軸*/
 }  
 
-body {   /*postion*/
+body {  
+	width: 100vw;
+        background-attachment: fixed;
+        background-position: left top;
+        background-size: cover;
 	padding:0;
 	margin :0;
-	/*display:table;*/  
-	width:100%;
 	background: url(back.jpg) repeat center top;
 }
-body img     {
-	position: absolute;
-
-         }
 p {
 	letter-spacing: normal; /*字寬*/
 	line-height: 1.7em; /*行高*/
 }
 #B ul li {
-        /*一個目錄*/
 			display:block; /*分段顯示*/
 			float:left;
 			margin:0;
@@ -35,39 +32,44 @@ p {
 				float:left;
 				color:#eeeeee; /*灰色*/
 				text-decoration:none;
-				padding:0px 71px ;
+				padding:0px 50px ;
 				line-height:30px;
 				font-weight:bold;
-				letter-spacing:4px;
+				letter-spacing:15px;
 			}
+#banner {  /*大標題的div*/
+	margin: 0 auto;
+	height:313px;
+	width:880px;
+}
 #B ul {
 		display:table;
 		margin:auto;
 		padding:0;
 		list-style-type:none; /*不用設項目符號*/
 		position:relative; 
-		top:313px;
 		height:30px;
 		text-transform:uppercase; /*大寫*/
 		font-size:15px;
-		width:1200px;
-		left:26.5px;
 		font-family: Verdana,Arial,sans-serif;
 	}
-#B { /*目錄*/
+#B { 	
 	height:30px;
 	margin:0 auto ;
 	text-align:center;
 }
 #shadow  /*陰影*/
-{	
-	background: url(blank.png) repeat center top;
-	margin:0 auto ;  /*top=0 其他為自動*/
-	width:64%;
-	box-shadow:3px 3px 12px black;	
+{	width: 880px;
+	background-image:url("back2.jpg") ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: left top;
+            background-size: cover;
+		margin:0 auto ;
 }
-#back{	
-	background: url("spurs2.jpg") no-repeat center top;	
+#back{	width: 880px;
+	background: url("spurs.jpg") no-repeat center top;
+	position: relative;	
 }
 .clear {
 	clear: both;
@@ -80,14 +82,13 @@ p {
 #content {
 	width:860px;
 	margin:0 auto;
-	min-height:1400px;
+	min-height:1200px;
 }
 #center {
 	width:860px;
 	padding:0px 0px 0px 0px;
 	float:left;
 	position:relative; 
-	top:313px;
 	margin:0 auto;
 }
 .player img{
@@ -99,7 +100,6 @@ p {
 	float:left;
 	height:300px;
 }
-
 
 .btn {
 	-webkit-border-radius: 11px;
@@ -127,6 +127,7 @@ p {
 	position: absolute;
 	/*width: 100px;*/
 	font-weight:bold;
+	font-size: 10px;
 	height: 15px;
 	left: 26px;
 	text-align: center;
@@ -150,3 +151,6 @@ p {
   .btn:hover .bottom {
 	top: 0px;
   }
+
+
+
